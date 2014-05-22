@@ -9,13 +9,13 @@
 <body>
 <%request.setCharacterEncoding("UTF-8"); %>
 <h1>結果</h1><br>
-性別　　　　　 <%= request.getParameter("sex")%>
+性別　　　　　 <%= session.getAttribute("sex")%>
 <br>
-年齢　　　　　 <%= request.getParameter("age")%>歳
+年齢　　　　　 <%= session.getAttribute("age")%>歳
 <br>
-職業　　　　　 <%= request.getParameter("job")%>
+職業　　　　　 <%= session.getAttribute("job")%>
 <br>
-今日の気分　<%= request.getParameter("text")%>
+今日の気分　<%= session.getAttribute("text")%>
 
 <br>
 <br>
